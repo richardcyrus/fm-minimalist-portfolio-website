@@ -1,0 +1,70 @@
+/* #region Form styles */
+.form__control {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+
+  label {
+    color: $form-input-label-color;
+    font-family: $form-input-label-font-family;
+    font-size: $form-input-label-font-size;
+    font-weight: $form-input-label-font-weight;
+    line-height: $form-input-label-line-height;
+  }
+
+  .form__input {
+    background: $form-input-background;
+    border: none;
+    color: $form-input-color;
+    font-size: $form-input-font-size;
+    font-weight: $form-input-font-weight;
+    line-height: $form-input-line-height;
+    margin-top: 0.5rem;
+    padding-bottom: 0.625rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+
+    &:not(textarea) {
+      height: 3rem;
+    }
+
+    &::placeholder {
+      color: $form-input-placeholder-color;
+    }
+
+    &:focus {
+      background: $form-input-focus-background;
+      border: $form-input-focus-border;
+      outline-color: transparent;
+    }
+
+    &.invalid {
+      border: $form-input-error-border;
+    }
+
+    &[readonly] {
+      border: 1px dotted currentColor;
+      cursor: not-allowed;
+    }
+
+    &[disabled] {
+      cursor: not-allowed;
+      opacity: 0.20;
+    }
+  }
+}
+
+textarea.form__input {
+  resize: vertical;
+}
+
+form button.button {
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 75em) {
+  .form__control:first-child {
+    margin-top: 0;
+  }
+}
+/* #endregion Form styles */

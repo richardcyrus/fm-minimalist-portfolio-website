@@ -1,0 +1,28 @@
+/* #region Get in Touch Section */
+.contact-description {
+  border-top: $separation-border;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+
+  @media screen and (min-width: 48em) {
+    margin-top: 5.875rem;
+    padding-top: 2rem;
+  }
+
+  @media screen and (min-width: 75em) {
+    display: grid;
+    grid-template-columns: 29.6875rem auto;
+    padding-top: 3rem;
+  }
+
+  &__inner p {
+    font-size: $font-size-text-body2;
+    margin-top: 1.5rem;
+
+    @media screen and (min-width: 75em) {
+      font-size: $font-size-text-body1;
+      margin-top: 0;
+    }
+  }
+}
+/* #endregion Get in Touch Section */

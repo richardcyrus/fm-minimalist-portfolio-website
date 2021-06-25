@@ -1,0 +1,213 @@
+/* #region Base styles */
+:root {
+  --font-size-h1: 2.5rem;
+  --font-size-h2: 2.5rem;
+  --font-size-h3: 2rem;
+  --font-size-tag-text: 0.8125rem;
+  --font-weight-h1: #{$font-weight-bold};
+  --font-weight-h2: #{$font-weight-bold};
+  --font-weight-h3: #{$font-weight-regular};
+  --letter-spacing-h1: -0.0225rem;
+  --letter-spacing-h2: -0.0225rem;
+  --letter-spacing-h3: -0.0181rem;
+  --line-height-h1: 2.625rem;
+  --line-height-h2: 2.625rem;
+  --line-height-h3: 2.25rem;
+}
+
+// Extra Large @ 1200px
+@media screen and (min-width: 75em) {
+  :root {
+    --font-size-h1: 3.125rem;
+    --font-size-tag-text: 1rem;
+    --letter-spacing-h1: -0.45px;
+    --line-height-h1: 3.125rem;
+  }
+}
+
+body {
+  background: $color-secondary-very-light-gray;
+  color: $color-text;
+  font-family: $font-family-text;
+  font-size: $font-size-text-body1;
+  font-weight: $font-weight-text;
+  line-height: $line-height-text;
+}
+
+h1, h2, h3 {
+  color: $color-primary-dark-gray;
+  font-family: $font-family-headings;
+  max-width: 30ch;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-h1);
+  letter-spacing: var(--letter-spacing-h1);
+  line-height: var(--line-height-h1);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-h2);
+  letter-spacing: var(--letter-spacing-h2);
+  line-height: var(--line-height-h2);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-h3);
+  letter-spacing: var(--letter-spacing-h3);
+  line-height: var(--line-height-h3);
+}
+
+a {
+  color: currentColor;
+}
+
+:focus {
+  outline-offset: 0.2rem;
+  outline: 1px solid currentColor;
+}
+
+p,
+li,
+dl {
+  max-width: 70ch;
+}
+
+main:focus {
+  outline: none;
+}
+
+.skip-link {
+  background: var(--color-light);
+  color: var(--color-primary-shade);
+  display: inline-block;
+  font-weight: 700;
+  left: 1rem;
+  padding: 0.7rem 1rem 0.5rem 1rem;
+  position: absolute;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 1rem;
+}
+
+.skip-link:hover {
+  background: var(--color-dark);
+  color: var(--color-light-shade);
+}
+
+.skip-link:not(:focus) {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 19.4375rem;
+
+  @media screen and (min-width: 48em) {
+    max-width: 43rem;
+  }
+
+  @media screen and (min-width: 75em) {
+    max-width: 69.375rem;
+  }
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
+
+a.button {
+  text-decoration: none;
+}
+
+// Reset default button styles
+button.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: $btn-font-family;
+  padding: 0;
+
+  @media screen and (-ms-high-contrast: active) {
+    border: 2px solid currentColor;
+  }
+}
+
+a.button,
+button.button {
+  align-items: center;
+  align-self: start;
+  border: 1px solid $color-primary-dark-gray;
+  color: $color-primary-dark-gray;
+  display: inline-flex;
+  font-size: $btn-font-size;
+  font-weight: $btn-font-weight;
+  justify-content: center;
+  letter-spacing: $btn-letter-spacing;
+  min-height: 3rem;
+  min-width: 10.125rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 220ms all ease-in-out;
+
+  &:hover,
+  &:active {
+    background-color: $btn-secondary-hover-background;
+    color: $btn-secondary-hover-font-color;
+  }
+
+  &:disabled {
+    opacity: 0.2;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 4px scale-color($color-primary-dark-gray, $lightness: -40%);
+    outline-color: transparent;
+    outline-style: solid;
+  }
+
+  &--block {
+    width: 100%;
+  }
+
+  &-primary {
+    background: $btn-primary-background;
+    border: none;
+    color: #ffffff;
+    min-width: 12.5rem;
+    padding-left: 3rem;
+    position: relative;
+
+    &:hover,
+    &:active {
+      background-color: $btn-primary-hover-background;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 4px $btn-primary-hover-background;
+    }
+
+    &::before {
+      background: url(/images/icons/down-arrows.svg) no-repeat center $btn-primary-icon-overlay-color;
+      content: '';
+      height: 48px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 48px;
+    }
+  }
+}
+/* #endregion Base styles */

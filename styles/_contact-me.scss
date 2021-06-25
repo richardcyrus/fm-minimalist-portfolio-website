@@ -1,0 +1,14 @@
+/* #region Contact Me Section*/
+.contact-form {
+  border-top: $separation-border;
+  margin-top: 2rem;
+  padding-top: 2rem;
+
+  @media screen and (min-width: 75em) {
+    display: grid;
+    grid-template-columns: 29.6875rem auto;
+    margin-top: 3rem;
+    padding-top: 3rem;
+  }
+}
+/* #endregion Contact Me Section*/

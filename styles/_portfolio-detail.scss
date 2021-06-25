@@ -1,0 +1,131 @@
+/* #region Portfolio detail */
+.project__hero {
+  margin-top: 2.5rem;
+
+  @media screen and (min-width: 48em) {
+    margin-top: 5.875rem;
+  }
+}
+
+.project__details {
+  margin-top: 2.5rem;
+}
+
+.project__intro {
+  border-bottom: $separation-border;
+  border-top: $separation-border;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+
+  &-description {
+    font-size: $font-size-text-body2;
+    margin-top: 1.5rem;
+  }
+
+  .button {
+    margin-top: 1.5rem;
+  }
+}
+
+.project__tags {
+  margin-top: 1.5rem;
+
+  p {
+    color: $color-tag-text;
+    font-size: var(--font-size-tag-text);
+    font-weight: $font-weight-tag-text;
+  }
+}
+
+.project__background {
+  margin-top: 3rem;
+
+  &-description {
+    font-size: $font-size-text-body2;
+    margin-top: 1.5rem;
+  }
+
+  &-previews-headline {
+    margin-top: 2.5rem;
+  }
+}
+
+.project__preview-one {
+  margin-top: 1.5rem;
+}
+
+.project__preview-two {
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 48em) {
+  .project__intro {
+    align-items: center;
+    column-gap: 0.75rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+
+    &-description {
+      grid-column: 2 / -1;
+      grid-row: 1 / 4;
+      margin-top: 0;
+    }
+
+    .project__tags {
+      margin-top: 1rem;
+    }
+
+    .button {
+      grid-column: 1 / 2;
+      margin-top: 1rem;
+    }
+  }
+
+  .project__background {
+    margin-top: 2.5rem;
+  }
+
+  .project__preview-one {
+    margin-top: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  .project__details {
+    align-items: start;
+    column-gap: 7.8125rem;
+    display: grid;
+    grid-template-columns: 21.875rem auto;
+    margin-top: 7.1875rem;
+  }
+
+  .project__intro {
+    display: block;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+
+    &-description {
+      margin-top: 1.75rem;
+    }
+
+    .project__tags {
+      margin-top: 1.5rem;
+
+      p:not(:first-child) {
+        margin-top: 1rem;
+      }
+    }
+
+    .button {
+      margin-top: 2.125rem;
+    }
+  }
+
+  .project__background {
+    margin-top: 0;
+  }
+}
+/* #endregion Portfolio detail */

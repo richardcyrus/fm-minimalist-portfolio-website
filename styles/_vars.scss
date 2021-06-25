@@ -1,0 +1,52 @@
+/* #region Variables */
+$font-family-headings: 'Ibarra Real Nova', serif;
+$font-family-text: 'Public Sans', sans-serif;
+$font-weight-bold: 700;
+$font-weight-regular: 400;
+$font-weight-semi-bold: 600;
+
+$color-headings: #33323d;
+$color-primary-cyan: #5fb4a2;
+$color-primary-dark-blue: #203a4c;
+$color-primary-dark-gray: #33323d;
+$color-secondary-errors: #f43030;
+$color-secondary-light-gray: #eaeaeb;
+$color-secondary-very-light-gray: #fafafa;
+$color-tag-text: $color-primary-cyan;
+$color-text: rgba(51, 50, 61, 0.8);
+
+$btn-font-family: $font-family-text;
+$btn-font-size: 0.75rem;
+$btn-font-weight: $font-weight-semi-bold;
+$btn-letter-spacing: 0.125rem;
+$btn-padding: 1.0625rem 2rem;
+$btn-primary-background: $color-primary-dark-blue;
+$btn-primary-hover-background: $color-primary-cyan;
+$btn-primary-icon-overlay-color: rgba(0, 0, 0, 0.1);
+$btn-primary-text-color: #ffffff;
+$btn-secondary-hover-background: $color-text;
+$btn-secondary-hover-font-color: $color-secondary-very-light-gray;
+
+$font-size-text-body1: 1rem;
+$font-size-text-body2: 0.9375rem;
+$font-weight-tag-text: $font-weight-bold;
+$font-weight-text: $font-weight-regular;
+$line-height-text: 1.875rem;
+
+$form-input-focus-background: $color-secondary-light-gray;
+$form-input-focus-border: 1px solid $color-primary-cyan;
+$form-input-background: rgba(51, 50, 62, 0.1);
+$form-input-color: $color-primary-dark-gray;
+$form-input-error-border: 1px solid $color-secondary-errors;
+$form-input-font-size: 0.8125rem;
+$form-input-font-weight: $font-weight-regular;
+$form-input-label-color: rgba(51, 50, 62, 0.8);
+$form-input-label-font-family: $font-family-text;
+$form-input-label-font-size: 0.8125rem;
+$form-input-label-font-weight: $font-weight-bold;
+$form-input-label-line-height: 1.875rem;
+$form-input-line-height: 1.875rem;
+$form-input-placeholder-color: rgba(51, 50, 62, 0.4);
+
+$separation-border: 1px solid rgba(51, 50, 62, 0.15);
+/* #endregion Variables */

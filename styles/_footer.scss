@@ -1,0 +1,125 @@
+/* #region Page footer */
+.site-footer {
+  background: $color-primary-dark-gray;
+  margin-top: 5rem;
+  padding: 3.5rem 0;
+
+  @media screen and (min-width: 48em) {
+    margin-top: 6rem;
+    padding: 1.5rem 0;
+  }
+
+  @media screen and (min-width: 75em) {
+    margin-top: 6.8125rem;
+  }
+
+  &__inner {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0 1rem;
+
+    @media screen and (min-width: 48em) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__brand {
+    display: block;
+    margin: 0 auto;
+    width: 3.8125rem;
+  }
+
+  &__icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__icon path {
+    fill: #ffffff;
+  }
+
+  &__navigation {
+    align-content: center;
+    column-gap: 3rem;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 48em) {
+      flex-direction: row;
+    }
+
+    ul {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 1.5rem 0 0;
+      padding: 0;
+      row-gap: 1.5rem;
+
+      @media screen and (min-width: 48em) {
+        flex-direction: row;
+        gap: 0.3rem 2.5rem;
+        margin: 0;
+      }
+    }
+
+    a {
+      color: #ffffff;
+      font-size: 0.75rem;
+      font-weight: $font-weight-semi-bold;
+      letter-spacing: 0.125rem;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      &:active,
+      &:hover {
+        color: $color-primary-cyan;
+      }
+
+      &:focus {
+        outline-color: transparent;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__social {
+    align-content: center;
+    display: flex;
+    margin: 1.5rem 0 0;
+
+    @media screen and (min-width: 48em) {
+      margin: 0;
+    }
+
+    ul {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem 0.9375rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: #ffffff;
+      font-size: 0.75rem;
+      font-weight: $font-weight-semi-bold;
+      letter-spacing: 0.125rem;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      &:active,
+      &:hover {
+        color: $color-primary-cyan;
+      }
+    }
+  }
+}
+/* #endregion Page footer */
