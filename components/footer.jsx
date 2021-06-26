@@ -37,7 +37,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className='site-footer__social'>
+          <div className='site-footer__professional'>
             <ul role='list'>
               <li>
                 <a href='https://github.com' title='GitHub'>
