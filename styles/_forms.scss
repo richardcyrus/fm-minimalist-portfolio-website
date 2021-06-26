@@ -38,7 +38,7 @@
       outline-color: transparent;
     }
 
-    &.invalid {
+    &.error {
       border: $form-input-error-border;
     }
 
@@ -60,6 +60,14 @@ textarea.form__input {
 
 form button.button {
   margin-top: 1.5rem;
+}
+
+div.error,
+.form__error {
+  color: $color-secondary-errors;
+  font-size: 0.625rem;
+  font-style: italic;
+  font-weight: $font-weight-bold;
 }
 
 @media screen and (min-width: 75em) {
