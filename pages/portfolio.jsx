@@ -12,7 +12,7 @@ export default function Portfolio () {
         <title>Frontend Mentor | Minimalist Portfolio</title>
       </Head>
       <Header />
-      <main id='main-content' tabIndex='-1' className='wrapper'>
+      <main id='main-content' tabIndex='-1' className='wrapper portfolio-index'>
         <div className='portfolio__item portfolio__item-image--left'>
           <div className='portfolio__item-image'>
             <picture>
@@ -40,9 +40,9 @@ export default function Portfolio () {
               JavaScript for the areas that required interactivity, such as the
               testimonial slider.
             </p>
-            <a href='manage.html' className='button'>
-              View Project
-            </a>
+            <Link href='/portfolio/[slug]' as='/portfolio/manage'>
+              <a className='button'>View Project</a>
+            </Link>
           </div>
         </div>
         <div className='portfolio__item portfolio__item-image--right'>
@@ -72,9 +72,9 @@ export default function Portfolio () {
               JavaScript for the areas that required interactivity, such as the
               features section.
             </p>
-            <a href='bookmark.html' className='button'>
-              View Project
-            </a>
+            <Link href='/portfolio/[slug]' as='/portfolio/bookmark'>
+              <a className='button'>View Project</a>
+            </Link>
           </div>
         </div>
         <div className='portfolio__item portfolio__item-image--left'>
@@ -104,9 +104,9 @@ export default function Portfolio () {
               project required was to enable the toggling of the mobile
               navigation.
             </p>
-            <a href='insure.html' className='button'>
-              View Project
-            </a>
+            <Link href='/portfolio/[slug]' as='/portfolio/insure'>
+              <a className='button'>View Project</a>
+            </Link>
           </div>
         </div>
         <div className='portfolio__item portfolio__item-image--right'>
@@ -136,9 +136,9 @@ export default function Portfolio () {
               fully-responsive. I took a mobile-first approach and used modern
               CSS like Flexbox and Grid for layout purposes.
             </p>
-            <a href='fylo.html' className='button'>
-              View Project
-            </a>
+            <Link href='/portfolio/[slug]' as='/portfolio/fylo'>
+              <a className='button'>View Project</a>
+            </Link>
           </div>
         </div>
         <ContactCta />
