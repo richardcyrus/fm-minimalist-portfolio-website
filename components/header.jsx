@@ -1,3 +1,5 @@
+import ActiveLink from './ActiveLink'
+
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -36,19 +38,19 @@ export default function Header () {
               <nav className='navigation' aria-label='primary'>
                 <ul role='list'>
                   <li>
-                    <Link href='/'>
-                      <a className='active'>Home</a>
-                    </Link>
+                    <ActiveLink activeClassName='active' href='/'>
+                      <a>Home</a>
+                    </ActiveLink>
                   </li>
                   <li>
-                    <Link href='/portfolio'>
+                    <ActiveLink activeClassName='active' href='/portfolio'>
                       <a>Portfolio</a>
-                    </Link>
+                    </ActiveLink>
                   </li>
                   <li>
-                    <Link href='/contact'>
+                    <ActiveLink activeClassName='active' href='/contact'>
                       <a>Contact Me</a>
-                    </Link>
+                    </ActiveLink>
                   </li>
                 </ul>
               </nav>

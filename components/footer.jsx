@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import ActiveLink from './ActiveLink'
 
 const Footer = () => {
   return (
@@ -21,19 +21,19 @@ const Footer = () => {
             </svg>
             <ul role='list'>
               <li>
-                <Link href='/'>
+                <ActiveLink activeClassName='active' href='/'>
                   <a>Home</a>
-                </Link>
+                </ActiveLink>
               </li>
               <li>
-                <Link href='/portfolio'>
+                <ActiveLink activeClassName='active' href='/portfolio'>
                   <a>Portfolio</a>
-                </Link>
+                </ActiveLink>
               </li>
               <li>
-                <Link href='/contact'>
+                <ActiveLink activeClassName='active' href='/contact'>
                   <a>Contact Me</a>
-                </Link>
+                </ActiveLink>
               </li>
             </ul>
           </div>
