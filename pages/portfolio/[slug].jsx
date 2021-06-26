@@ -30,19 +30,19 @@ const Project = ({ project }) => {
       </Head>
       <Header />
       <main
-        id='main-content'
-        tabIndex='-1'
-        className='wrapper portfolio-detail'
+        id="main-content"
+        tabIndex="-1"
+        className="wrapper portfolio-detail"
       >
-        <div className='project__hero'>
+        <div className="project__hero">
           <picture>
             <source
               srcSet={`/images/detail/desktop/image-${project.slug}-hero.jpg, /images/detail/desktop/image-${project.slug}-hero@2x.jpg 2x`}
-              media='(min-width: 1200px)'
+              media="(min-width: 1200px)"
             />
             <source
               srcSet={`/images/detail/tablet/image-${project.slug}-hero.jpg, /images/detail/tablet/image-${project.slug}-hero@2x.jpg 2x`}
-              media='(min-width: 768px)'
+              media="(min-width: 768px)"
             />
             <source
               srcSet={`/images/detail/mobile/image-${project.slug}-hero.jpg, /images/detail/mobile/image-${project.slug}-hero@2x.jpg 2x`}
@@ -50,39 +50,39 @@ const Project = ({ project }) => {
             {/* eslint-disable-next-line */}
             <img
               src={`/images/detail/mobile/image-${project.slug}-hero.jpg`}
-              alt=''
+              alt=""
             />
           </picture>
         </div>
-        <div className='project__details'>
-          <div className='project__intro'>
-            <h2 className='project__intro-headline'>{project.name}</h2>
-            <p className='project__intro-description'>{project.excerpt}</p>
-            <div className='project__tags'>
+        <div className="project__details">
+          <div className="project__intro">
+            <h2 className="project__intro-headline">{project.name}</h2>
+            <p className="project__intro-description">{project.excerpt}</p>
+            <div className="project__tags">
               <p>{project.roles.join(' / ')}</p>
               <p>{project.languages.join(' / ')}</p>
             </div>
-            <a href={project.websiteUrl} className='button'>
+            <a href={project.websiteUrl} className="button">
               Visit Website
             </a>
           </div>
-          <div className='project__background'>
-            <h3 className='project__background-headline'>Project Background</h3>
+          <div className="project__background">
+            <h3 className="project__background-headline">Project Background</h3>
             <p
-              className='project__background-description'
+              className="project__background-description"
               dangerouslySetInnerHTML={{ __html: project.description }}
             />
-            <h3 className='project__background-previews-headline'>
+            <h3 className="project__background-previews-headline">
               Static Previews
             </h3>
-            <picture className='project__preview-one'>
+            <picture className="project__preview-one">
               <source
                 srcSet={`/images/detail/desktop/image-${project.slug}-preview-1.jpg, /images/detail/desktop/image-${project.slug}-preview-1@2x.jpg 2x`}
-                media='(min-width: 1200px)'
+                media="(min-width: 1200px)"
               />
               <source
                 srcSet={`/images/detail/tablet/image-${project.slug}-preview-1.jpg, /images/detail/tablet/image-${project.slug}-preview-1@2x.jpg 2x`}
-                media='(min-width: 768px)'
+                media="(min-width: 768px)"
               />
               <source
                 srcSet={`/images/detail/mobile/image-${project.slug}-preview-1.jpg, /images/detail/mobile/image-${project.slug}-preview-1@2x.jpg 2x`}
@@ -90,17 +90,17 @@ const Project = ({ project }) => {
               {/* eslint-disable-next-line */}
               <img
                 src={`/images/detail/mobile/image-${project.slug}-preview-1.jpg`}
-                alt=''
+                alt=""
               />
             </picture>
-            <picture className='project__preview-two'>
+            <picture className="project__preview-two">
               <source
                 srcSet={`/images/detail/desktop/image-${project.slug}-preview-2.jpg, /images/detail/desktop/image-${project.slug}-preview-2@2x.jpg 2x`}
-                media='(min-width: 1200px)'
+                media="(min-width: 1200px)"
               />
               <source
                 srcSet={`/images/detail/tablet/image-${project.slug}-preview-2.jpg, /images/detail/tablet/image-${project.slug}-preview-2@2x.jpg 2x`}
-                media='(min-width: 768px)'
+                media="(min-width: 768px)"
               />
               <source
                 srcSet={`/images/detail/mobile/image-${project.slug}-preview-2.jpg, /images/detail/mobile/image-${project.slug}-preview-2@2x.jpg 2x`}
@@ -108,28 +108,34 @@ const Project = ({ project }) => {
               {/* eslint-disable-next-line */}
               <img
                 src={`/images/detail/mobile/image-${project.slug}-preview-2.jpg`}
-                alt=''
+                alt=""
               />
             </picture>
           </div>
         </div>
-        <div className='portfolio__pagination'>
-          <Link href='/portfolio/[slug]' as={`/portfolio/${project.previousProject.toLowerCase()}`}>
-            <a className='portfolio__pagination--previous'>
-              <p className='portfolio__pagination--title'>
+        <div className="portfolio__pagination">
+          <Link
+            href="/portfolio/[slug]"
+            as={`/portfolio/${project.previousProject.toLowerCase()}`}
+          >
+            <a className="portfolio__pagination--previous">
+              <p className="portfolio__pagination--title">
                 {project.previousProject}
               </p>
-              <p className='portfolio__pagination--directional'>
+              <p className="portfolio__pagination--directional">
                 Previous Project
               </p>
             </a>
           </Link>
-          <Link href='/portfolio/[slug]' as={`/portfolio/${project.nextProject.toLowerCase()}`}>
-            <a className='portfolio__pagination--next'>
-              <p className='portfolio__pagination--title'>
+          <Link
+            href="/portfolio/[slug]"
+            as={`/portfolio/${project.nextProject.toLowerCase()}`}
+          >
+            <a className="portfolio__pagination--next">
+              <p className="portfolio__pagination--title">
                 {project.nextProject}
               </p>
-              <p className='portfolio__pagination--directional'>Next Project</p>
+              <p className="portfolio__pagination--directional">Next Project</p>
             </a>
           </Link>
         </div>

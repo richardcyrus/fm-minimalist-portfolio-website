@@ -5,57 +5,57 @@ import Header from '../components/header'
 import Footer from '../components/footer'
 import ContactCta from '../components/contact-cta'
 
-export default function Home () {
+export default function Home() {
   return (
     <>
       <Head>
         <title>Frontend Mentor | Minimalist Portfolio</title>
       </Head>
       <Header />
-      <main id='main-content' tabIndex='-1' className='wrapper'>
-        <div className='home__hero'>
+      <main id="main-content" tabIndex="-1" className="wrapper">
+        <div className="home__hero">
           <picture>
             <source
-              srcSet='/images/homepage/desktop/image-homepage-hero.jpg, /images/homepage/desktop/image-homepage-hero@2x 2x.jpg'
-              media='(min-width: 1200px)'
+              srcSet="/images/homepage/desktop/image-homepage-hero.jpg, /images/homepage/desktop/image-homepage-hero@2x 2x.jpg"
+              media="(min-width: 1200px)"
             />
             <source
-              srcSet='/images/homepage/tablet/image-homepage-hero.jpg, /images/homepage/tablet/image-homepage-hero@2x 2x.jpg'
-              media='(min-width: 768px)'
+              srcSet="/images/homepage/tablet/image-homepage-hero.jpg, /images/homepage/tablet/image-homepage-hero@2x 2x.jpg"
+              media="(min-width: 768px)"
             />
-            <source srcSet='/images/homepage/mobile/image-homepage-hero.jpg, /images/homepage/mobile/image-homepage-hero@2x 2x.jpg' />
+            <source srcSet="/images/homepage/mobile/image-homepage-hero.jpg, /images/homepage/mobile/image-homepage-hero@2x 2x.jpg" />
             {/* eslint-disable-next-line */}
-            <img src='/images/homepage/mobile/image-homepage-hero.jpg' alt='' />
+            <img src="/images/homepage/mobile/image-homepage-hero.jpg" alt="" />
           </picture>
-          <div className='home-cta'>
-            <p className='headline'>
+          <div className="home-cta">
+            <p className="headline">
               Hey, I’m Alex Spencer and I love building beautiful websites
             </p>
-            <a href='#about' className='button button-primary'>
+            <a href="#about" className="button button-primary">
               About Me
             </a>
           </div>
         </div>
-        <div className='home__about'>
+        <div className="home__about">
           <picture>
             <source
-              srcSet='/images/homepage/desktop/image-homepage-profile.jpg, /images/homepage/desktop/image-homepage-profile@2x 2x.jpg'
-              media='(min-width: 1200px)'
+              srcSet="/images/homepage/desktop/image-homepage-profile.jpg, /images/homepage/desktop/image-homepage-profile@2x 2x.jpg"
+              media="(min-width: 1200px)"
             />
             <source
-              srcSet='/images/homepage/tablet/image-homepage-profile.jpg, /images/homepage/tablet/image-homepage-profile@2x 2x.jpg'
-              media='(min-width: 768px)'
+              srcSet="/images/homepage/tablet/image-homepage-profile.jpg, /images/homepage/tablet/image-homepage-profile@2x 2x.jpg"
+              media="(min-width: 768px)"
             />
-            <source srcSet='/images/homepage/mobile/image-homepage-profile.jpg, /images/homepage/mobile/image-homepage-profile@2x 2x.jpg' />
+            <source srcSet="/images/homepage/mobile/image-homepage-profile.jpg, /images/homepage/mobile/image-homepage-profile@2x 2x.jpg" />
             {/* eslint-disable-next-line */}
             <img
-              src='/images/homepage/mobile/image-homepage-profile.jpg'
-              alt=''
+              src="/images/homepage/mobile/image-homepage-profile.jpg"
+              alt=""
             />
           </picture>
-          <div id='about' className='home__about-me'>
-            <h2 className='home__about-headline'>About Me</h2>
-            <p className='home__about-description'>
+          <div id="about" className="home__about-me">
+            <h2 className="home__about-headline">About Me</h2>
+            <p className="home__about-description">
               I’m a junior front-end developer looking for a new role in an
               exciting company. I focus on writing accessible HTML, using modern
               CSS practices and writing clean JavaScript. When writing
@@ -66,8 +66,8 @@ export default function Home () {
               going for a walk, run or cycling. I’d love you to check out my
               work.
             </p>
-            <Link href='/portfolio'>
-              <a className='button'>Go to Portfolio</a>
+            <Link href="/portfolio">
+              <a className="button">Go to Portfolio</a>
             </Link>
           </div>
         </div>
