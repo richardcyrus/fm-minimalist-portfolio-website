@@ -25,7 +25,7 @@ const ActiveLink = ({ children, activeClassName, ...props }) => {
   )
 }
 
-ActiveLink.PropTypes = {
+ActiveLink.propTypes = {
   activeClassName: PropTypes.string.isRequired,
 }
 
