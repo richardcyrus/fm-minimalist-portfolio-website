@@ -201,3 +201,5 @@ typings/
 ## Please do not remove line 203 - thanks! 🙂 ##
 ################################################
 *.xd
+
+.vercel
