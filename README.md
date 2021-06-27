@@ -6,6 +6,7 @@ This is a solution to the [Minimalist portfolio website challenge on Frontend Me
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -27,9 +28,44 @@ Users should be able to:
   - The `Name`, `Email Address` or `Message` fields are empty should show "This field is required"
   - The `Email Address` is not formatted correctly should show "Please use a valid email address"
 
+### Screenshot
+
+![Reference Preview](./design/reference/preview.jpg)
+
+#### Desktop Screenshots
+
+- [Home](./design/screenshots/desktop/desktop-screenshot-home.png)
+- [Portfolio](./design/screenshots/desktop/desktop-screenshot-portfolio.png)
+- [Contact](./design/screenshots/desktop/desktop-screenshot-contact.png)
+- [Portfolio: Manage](./design/screenshots/desktop/desktop-screenshot-manage.png)
+- [Portfolio: Bookmark](./design/screenshots/desktop/desktop-screenshot-bookmark.png)
+- [Portfolio: Insure](./design/screenshots/desktop/desktop-screenshot-insure.png)
+- [Portfolio: Fylo](./design/screenshots/desktop/desktop-screenshot-fylo.png)
+
+#### Tablet Screenshots
+
+- [Home](./design/screenshots/tablet/tablet-screenshot-home.png)
+- [Portfolio](./design/screenshots/tablet/tablet-screenshot-portfolio.png)
+- [Contact](./design/screenshots/tablet/tablet-screenshot-contact.png)
+- [Portfolio: Manage](./design/screenshots/tablet/tablet-screenshot-manage.png)
+- [Portfolio: Bookmark](./design/screenshots/tablet/tablet-screenshot-bookmark.png)
+- [Portfolio: Insure](./design/screenshots/tablet/tablet-screenshot-insure.png)
+- [Portfolio: Fylo](./design/screenshots/tablet/tablet-screenshot-fylo.png)
+
+#### Mobile Screenshots
+
+- [Home](./design/screenshots/mobile/mobile-screenshot-home.png)
+- [Portfolio](./design/screenshots/mobile/mobile-screenshot-portfolio.png)
+- [Contact](./design/screenshots/mobile/mobile-screenshot-contact.png)
+- [Portfolio: Manage](./design/screenshots/mobile/mobile-screenshot-manage.png)
+- [Portfolio: Bookmark](./design/screenshots/mobile/mobile-screenshot-bookmark.png)
+- [Portfolio: Insure](./design/screenshots/mobile/mobile-screenshot-insure.png)
+- [Portfolio: Fylo](./design/screenshots/mobile/mobile-screenshot-fylo.png)
+
 ### Links
 
 - [Repository URL](https://github.com/richardcyrus/fm-minimalist-portfolio-website)
+- [Live Site URL](https://fm-minimalist-portfolio-website.vercel.app/)
 
 ## My process
 
