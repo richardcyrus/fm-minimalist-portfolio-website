@@ -1,9 +1,12 @@
+import React, { useState } from 'react'
 import ActiveLink from './ActiveLink'
 
 import Link from 'next/link'
 import Image from 'next/image'
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false)
+
   return (
     <header className="site-head" role="banner">
       <Link href="#main-content">
@@ -21,12 +24,21 @@ export default function Header() {
               />
             </a>
           </Link>
-          <div className="burger-menu" data-element="burger-root">
+          <div
+            className="burger-menu"
+            data-element="burger-root"
+            status={isOpen === false ? 'closed' : 'open'}
+          >
             <button
               className="burger-menu__trigger"
               data-element="burger-menu-trigger"
               type="button"
               aria-label="Toggle menu"
+              aria-controls="navigation"
+              aria-expanded={isOpen.toString()}
+              onClick={() => {
+                setIsOpen(!isOpen)
+              }}
             >
               {/* eslint-disable-next-line */}
               <span className="burger-menu__bar"></span>
@@ -35,7 +47,7 @@ export default function Header() {
               className="burger-menu__panel"
               data-element="burger-menu-panel"
             >
-              <nav className="navigation" aria-label="primary">
+              <nav id="navigation" className="navigation" aria-label="primary">
                 <ul role="list">
                   <li>
                     <ActiveLink activeClassName="active" href="/">
