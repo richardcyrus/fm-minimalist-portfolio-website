@@ -16,14 +16,14 @@ export default function Home() {
         <div className="home__hero">
           <picture>
             <source
-              srcSet="/images/homepage/desktop/image-homepage-hero.jpg, /images/homepage/desktop/image-homepage-hero@2x 2x.jpg"
+              srcSet="/images/homepage/desktop/image-homepage-hero.jpg, /images/homepage/desktop/image-homepage-hero@2x.jpg 2x"
               media="(min-width: 1200px)"
             />
             <source
-              srcSet="/images/homepage/tablet/image-homepage-hero.jpg, /images/homepage/tablet/image-homepage-hero@2x 2x.jpg"
+              srcSet="/images/homepage/tablet/image-homepage-hero.jpg, /images/homepage/tablet/image-homepage-hero@2x.jpg 2x"
               media="(min-width: 768px)"
             />
-            <source srcSet="/images/homepage/mobile/image-homepage-hero.jpg, /images/homepage/mobile/image-homepage-hero@2x 2x.jpg" />
+            <source srcSet="/images/homepage/mobile/image-homepage-hero.jpg, /images/homepage/mobile/image-homepage-hero@2x.jpg 2x" />
             {/* eslint-disable-next-line */}
             <img src="/images/homepage/mobile/image-homepage-hero.jpg" alt="" />
           </picture>
@@ -39,14 +39,14 @@ export default function Home() {
         <div className="home__about">
           <picture>
             <source
-              srcSet="/images/homepage/desktop/image-homepage-profile.jpg, /images/homepage/desktop/image-homepage-profile@2x 2x.jpg"
+              srcSet="/images/homepage/desktop/image-homepage-profile.jpg, /images/homepage/desktop/image-homepage-profile@2x.jpg 2x"
               media="(min-width: 1200px)"
             />
             <source
-              srcSet="/images/homepage/tablet/image-homepage-profile.jpg, /images/homepage/tablet/image-homepage-profile@2x 2x.jpg"
+              srcSet="/images/homepage/tablet/image-homepage-profile.jpg, /images/homepage/tablet/image-homepage-profile@2x.jpg 2x"
               media="(min-width: 768px)"
             />
-            <source srcSet="/images/homepage/mobile/image-homepage-profile.jpg, /images/homepage/mobile/image-homepage-profile@2x 2x.jpg" />
+            <source srcSet="/images/homepage/mobile/image-homepage-profile.jpg, /images/homepage/mobile/image-homepage-profile@2x.jpg 2x" />
             {/* eslint-disable-next-line */}
             <img
               src="/images/homepage/mobile/image-homepage-profile.jpg"

@@ -30,6 +30,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.3rem 2.5rem;
+    list-style-type: none;
     margin: 0;
     padding: 0;
   }
@@ -126,7 +127,7 @@
       }
     }
 
-    &[status='open'] {
+    &[data-status='open'] {
       .burger-menu__panel {
         opacity: 1;
         transition: opacity 400ms ease;
@@ -141,7 +142,7 @@
       }
     }
 
-    &[status='closed'] {
+    &[data-status='closed'] {
       .burger-menu__panel > * {
         opacity: 0;
         transform: translateY(5rem);

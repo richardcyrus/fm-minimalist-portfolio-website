@@ -28,12 +28,12 @@ export default function Home() {
               form.
             </p>
             <div className="professional-icons">
-              <ul role="list">
+              <ul>
                 <li>
                   <a href="https://github.com" title="GitHub">
                     <Image
                       src="/images/icons/github.svg"
-                      alt=""
+                      alt="Link to GitHub.com"
                       width={25}
                       height={24}
                     />
@@ -43,7 +43,7 @@ export default function Home() {
                   <a href="https://twitter.com" title="Twitter">
                     <Image
                       src="/images/icons/twitter.svg"
-                      alt=""
+                      alt="Link to twitter.com"
                       width={24}
                       height={20}
                     />
@@ -53,7 +53,7 @@ export default function Home() {
                   <a href="https://www.linkedin.com" title="LinkedIn">
                     <Image
                       src="/images/icons/linkedin.svg"
-                      alt=""
+                      alt="Link to linkedin.com"
                       width={24}
                       height={24}
                     />
