@@ -1,17 +1,17 @@
 import React, { useState } from 'react'
-import ActiveLink from './ActiveLink'
-
 import Link from 'next/link'
 import Image from 'next/image'
+
+import NavLink from './NavLink'
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
     <header className="site-head">
-      <Link href="#main-content">
-        <a className="skip-link">Skip to content</a>
-      </Link>
+      <a href="#main-content" className="skip-link">
+        Skip to content
+      </a>
       <div className="wrapper">
         <div className="site-head__inner">
           <Link href="/">
@@ -50,19 +50,19 @@ export default function Header() {
               <nav id="navigation" className="navigation" aria-label="primary">
                 <ul>
                   <li>
-                    <ActiveLink activeClassName="active" href="/">
+                    <NavLink exact href="/">
                       <a>Home</a>
-                    </ActiveLink>
+                    </NavLink>
                   </li>
                   <li>
-                    <ActiveLink activeClassName="active" href="/portfolio">
+                    <NavLink href="/portfolio">
                       <a>Portfolio</a>
-                    </ActiveLink>
+                    </NavLink>
                   </li>
                   <li>
-                    <ActiveLink activeClassName="active" href="/contact">
+                    <NavLink exact href="/contact">
                       <a>Contact Me</a>
-                    </ActiveLink>
+                    </NavLink>
                   </li>
                 </ul>
               </nav>
