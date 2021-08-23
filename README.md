@@ -64,6 +64,7 @@ Users should be able to:
 
 ### Links
 
+- [Solution URL](https://www.frontendmentor.io/solutions/minimalist-portfolio-react-nextjs-sass-AQcrmXB_U)
 - [Repository URL](https://github.com/richardcyrus/fm-minimalist-portfolio-website)
 - [Live Site URL](https://fm-minimalist-portfolio-website.vercel.app/)
 
@@ -104,4 +105,4 @@ I originally had plans to use CSS/SCSS modules when moving to Next.js, but it wo
 ## Author
 
 - Website - [www.richardcyrus.com](https://www.richardcyrus.com)
-- Frontend Mentor - [@richarcyrus](https://www.frontendmentor.io/profile/richarcyrus)
+- Frontend Mentor - [@richardcyrus](https://www.frontendmentor.io/profile/richardcyrus)
