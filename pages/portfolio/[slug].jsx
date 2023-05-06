@@ -117,26 +117,24 @@ const Project = ({ project }) => {
           <Link
             href="/portfolio/[slug]"
             as={`/portfolio/${project.previousProject.toLowerCase()}`}
+            className="portfolio__pagination--previous"
           >
-            <a className="portfolio__pagination--previous">
               <p className="portfolio__pagination--title">
                 {project.previousProject}
               </p>
               <p className="portfolio__pagination--directional">
                 Previous Project
               </p>
-            </a>
           </Link>
           <Link
             href="/portfolio/[slug]"
             as={`/portfolio/${project.nextProject.toLowerCase()}`}
+            className="portfolio__pagination--next"
           >
-            <a className="portfolio__pagination--next">
               <p className="portfolio__pagination--title">
                 {project.nextProject}
               </p>
               <p className="portfolio__pagination--directional">Next Project</p>
-            </a>
           </Link>
         </div>
         <ContactCta />

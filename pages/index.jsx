@@ -66,8 +66,8 @@ export default function Home() {
               going for a walk, run or cycling. I’d love you to check out my
               work.
             </p>
-            <Link href="/portfolio">
-              <a className="button">Go to Portfolio</a>
+            <Link href="/portfolio" className="button">
+              Go to Portfolio
             </Link>
           </div>
         </div>

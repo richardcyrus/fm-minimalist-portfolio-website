@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import React from 'react'
 
 const Footer = () => {
   return (
@@ -22,17 +23,17 @@ const Footer = () => {
             <ul>
               <li>
                 <Link href="/">
-                  <a>Home</a>
+                  Home
                 </Link>
               </li>
               <li>
                 <Link href="/portfolio">
-                  <a>Portfolio</a>
+                  Portfolio
                 </Link>
               </li>
               <li>
-                <Link exact href="/contact">
-                  <a>Contact Me</a>
+                <Link href="/contact">
+                  Contact Me
                 </Link>
               </li>
             </ul>

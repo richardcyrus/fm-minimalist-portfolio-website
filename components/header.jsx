@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-
-import NavLink from './NavLink'
+import { useRouter } from 'next/router'
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
+
+  const router = useRouter();
 
   return (
     <header className="site-head">
@@ -14,15 +15,13 @@ export default function Header() {
       </a>
       <div className="wrapper">
         <div className="site-head__inner">
-          <Link href="/">
-            <a aria-label="Alex Spencer home" className="site-head__brand">
+          <Link href="/" aria-label="Alex Spencer home" className="site-head__brand">
               <Image
                 src="/images/logo.svg"
                 alt="Alex Spencer logo"
                 width={61}
                 height={32}
               />
-            </a>
           </Link>
           <div
             className="burger-menu"
@@ -50,19 +49,19 @@ export default function Header() {
               <nav id="navigation" className="navigation" aria-label="primary">
                 <ul>
                   <li>
-                    <NavLink exact href="/">
-                      <a>Home</a>
-                    </NavLink>
+                    <Link href="/" className={router.pathname === '/' ? 'active' : ''}>
+                      Home
+                    </Link>
                   </li>
                   <li>
-                    <NavLink href="/portfolio">
-                      <a>Portfolio</a>
-                    </NavLink>
+                    <Link href="/portfolio" className={router.pathname.startsWith('/portfolio') ? 'active' : ''}>
+                      Portfolio
+                    </Link>
                   </li>
                   <li>
-                    <NavLink exact href="/contact">
-                      <a>Contact Me</a>
-                    </NavLink>
+                    <Link href="/contact" className={router.pathname === '/contact' ? 'active': ''}>
+                      Contact Me
+                    </Link>
                   </li>
                 </ul>
               </nav>

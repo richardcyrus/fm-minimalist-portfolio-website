@@ -40,8 +40,8 @@ export default function Portfolio() {
               JavaScript for the areas that required interactivity, such as the
               testimonial slider.
             </p>
-            <Link href="/portfolio/[slug]" as="/portfolio/manage">
-              <a className="button">View Project</a>
+            <Link href="/portfolio/[slug]" as="/portfolio/manage" className="button">
+              View Project
             </Link>
           </div>
         </div>
@@ -72,8 +72,8 @@ export default function Portfolio() {
               JavaScript for the areas that required interactivity, such as the
               features section.
             </p>
-            <Link href="/portfolio/[slug]" as="/portfolio/bookmark">
-              <a className="button">View Project</a>
+            <Link href="/portfolio/[slug]" as="/portfolio/bookmark" className="button">
+              View Project
             </Link>
           </div>
         </div>
@@ -104,8 +104,8 @@ export default function Portfolio() {
               project required was to enable the toggling of the mobile
               navigation.
             </p>
-            <Link href="/portfolio/[slug]" as="/portfolio/insure">
-              <a className="button">View Project</a>
+            <Link href="/portfolio/[slug]" as="/portfolio/insure" className="button">
+              View Project
             </Link>
           </div>
         </div>
@@ -136,8 +136,8 @@ export default function Portfolio() {
               fully-responsive. I took a mobile-first approach and used modern
               CSS like Flexbox and Grid for layout purposes.
             </p>
-            <Link href="/portfolio/[slug]" as="/portfolio/fylo">
-              <a className="button">View Project</a>
+            <Link href="/portfolio/[slug]" as="/portfolio/fylo" className="button">
+              View Project
             </Link>
           </div>
         </div>

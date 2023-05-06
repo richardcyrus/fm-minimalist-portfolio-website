@@ -7,8 +7,8 @@ const ContactCta = () => {
         Interested in doing a project together?
       </h2>
       <hr className="contact-cta__rule" />
-      <Link href="/contact">
-        <a className="button contact-cta__button">Contact Me</a>
+      <Link href="/contact" className="button contact-cta__button">
+        Contact Me
       </Link>
     </div>
   )
