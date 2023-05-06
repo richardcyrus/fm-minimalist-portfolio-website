@@ -72,9 +72,9 @@ Users should be able to:
 
 I first completed the design in plain HTML and SASS. Once those designs were complete, I translated them for React and Next.js.
 
-This is my first Next.js application and haven't written anything in React in just under two years. While this was mostly just a tranlation of the HTML designs to React, the navigation and form were areas that provided challenges.
+This is my first Next.js application and haven't written anything in React in just under two years. While this was mostly just a translation of the HTML designs to React, the navigation and form were areas that provided challenges.
 
-I originally had plans to use CSS/SCSS modules when moving to Next.js, but it would make more sense to start the design in Next than to try to tranlate what I had already completed for the HTML/SASS version of this project. AS a result, I just used a global stylesheet instead of SCSS modules.
+I originally had plans to use CSS/SCSS modules when moving to Next.js, but it would make more sense to start the design in Next than to try to translate what I had already completed for the HTML/SASS version of this project. AS a result, I just used a global stylesheet instead of SCSS modules.
 
 ### Built with
 
