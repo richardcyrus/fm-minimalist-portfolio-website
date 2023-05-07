@@ -1,12 +1,14 @@
+'use client'
+
 import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useRouter } from 'next/router'
+import { usePathname } from 'next/navigation'
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
-  const router = useRouter();
+  const pathname = usePathname();
 
   return (
     <header className="site-head">
@@ -15,7 +17,7 @@ export default function Header() {
       </a>
       <div className="wrapper">
         <div className="site-head__inner">
-          <Link href="/" aria-label="Alex Spencer home" className="site-head__brand">
+          <Link href="/" aria-label="Alex Spencer home" className="site-head__brand" prefetch={false}>
               <Image
                 src="/images/logo.svg"
                 alt="Alex Spencer logo"
@@ -49,17 +51,17 @@ export default function Header() {
               <nav id="navigation" className="navigation" aria-label="primary">
                 <ul>
                   <li>
-                    <Link href="/" className={router.pathname === '/' ? 'active' : ''}>
+                    <Link href="/" className={pathname === '/' ? 'active' : ''} prefetch={false}>
                       Home
                     </Link>
                   </li>
                   <li>
-                    <Link href="/portfolio" className={router.pathname.startsWith('/portfolio') ? 'active' : ''}>
+                    <Link href="/portfolio" className={pathname.startsWith('/portfolio') ? 'active' : ''} prefetch={false}>
                       Portfolio
                     </Link>
                   </li>
                   <li>
-                    <Link href="/contact" className={router.pathname === '/contact' ? 'active': ''}>
+                    <Link href="/contact" className={pathname === '/contact' ? 'active': ''} prefetch={false}>
                       Contact Me
                     </Link>
                   </li>

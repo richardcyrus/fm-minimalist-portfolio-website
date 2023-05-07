@@ -1,17 +1,10 @@
-import Head from 'next/head'
 import Link from 'next/link'
 
-import Header from '../components/header'
-import Footer from '../components/footer'
-import ContactCta from '../components/contact-cta'
+import ContactCta from '@/components/contact-cta'
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Frontend Mentor | Minimalist Portfolio</title>
-      </Head>
-      <Header />
       <main id="main-content" tabIndex="-1" className="wrapper">
         <div className="home__hero">
           <picture>
@@ -66,14 +59,13 @@ export default function Home() {
               going for a walk, run or cycling. I’d love you to check out my
               work.
             </p>
-            <Link href="/portfolio" className="button">
+            <Link href="/portfolio" className="button" prefetch={false}>
               Go to Portfolio
             </Link>
           </div>
         </div>
         <ContactCta />
       </main>
-      <Footer />
     </>
   )
 }

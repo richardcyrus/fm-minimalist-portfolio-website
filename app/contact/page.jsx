@@ -1,17 +1,10 @@
-import Head from 'next/head'
 import Image from 'next/image'
 
-import Header from '../components/header'
-import Footer from '../components/footer'
-import ContactForm from '../components/ContactForm'
+import ContactForm from '@/components/ContactForm'
 
-export default function Home() {
+export default function ContactPage() {
   return (
     <>
-      <Head>
-        <title>Frontend Mentor | Minimalist Portfolio</title>
-      </Head>
-      <Header />
       <main id="main-content" tabIndex="-1" className="wrapper">
         <section className="contact-description">
           <h2 className="contact-description__headline">Get in Touch</h2>
@@ -21,7 +14,7 @@ export default function Home() {
               help. I’m currently looking for a new role and am open to a wide
               range of opportunities. My preference would be to find a position
               in a company in London. But I’m also happy to hear about
-              opportunites that don’t fit that description. I’m a hard-working
+              opportunities that don’t fit that description. I’m a hard-working
               and positive person who will always approach each task with a
               sense of purpose and attention to detail. Please do feel free to
               check out my online profiles below and get in touch using the
@@ -70,7 +63,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   )
 }

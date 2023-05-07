@@ -1,5 +1,6 @@
+'use client'
+
 import Link from 'next/link'
-import React from 'react'
 
 const Footer = () => {
   return (
@@ -22,17 +23,17 @@ const Footer = () => {
             </svg>
             <ul>
               <li>
-                <Link href="/">
+                <Link href="/" prefetch={false}>
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/portfolio">
+                <Link href="/portfolio" prefetch={false}>
                   Portfolio
                 </Link>
               </li>
               <li>
-                <Link href="/contact">
+                <Link href="/contact" prefetch={false}>
                   Contact Me
                 </Link>
               </li>

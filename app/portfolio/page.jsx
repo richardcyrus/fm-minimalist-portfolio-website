@@ -1,17 +1,10 @@
-import Head from 'next/head'
 import Link from 'next/link'
 
-import Header from '../components/header'
-import Footer from '../components/footer'
-import ContactCta from '../components/contact-cta'
+import ContactCta from '@/components/contact-cta'
 
-export default function Portfolio() {
+export default function PortfolioPage() {
   return (
     <>
-      <Head>
-        <title>Frontend Mentor | Minimalist Portfolio</title>
-      </Head>
-      <Header />
       <main id="main-content" tabIndex="-1" className="wrapper portfolio-index">
         <div className="portfolio__item portfolio__item-image--left">
           <div className="portfolio__item-image">
@@ -40,7 +33,7 @@ export default function Portfolio() {
               JavaScript for the areas that required interactivity, such as the
               testimonial slider.
             </p>
-            <Link href="/portfolio/[slug]" as="/portfolio/manage" className="button">
+            <Link href="/portfolio/manage" className="button" prefetch={false}>
               View Project
             </Link>
           </div>
@@ -72,7 +65,7 @@ export default function Portfolio() {
               JavaScript for the areas that required interactivity, such as the
               features section.
             </p>
-            <Link href="/portfolio/[slug]" as="/portfolio/bookmark" className="button">
+            <Link href="/portfolio/bookmark" className="button" prefetch={false}>
               View Project
             </Link>
           </div>
@@ -104,7 +97,7 @@ export default function Portfolio() {
               project required was to enable the toggling of the mobile
               navigation.
             </p>
-            <Link href="/portfolio/[slug]" as="/portfolio/insure" className="button">
+            <Link href="/portfolio/insure" className="button" prefetch={false}>
               View Project
             </Link>
           </div>
@@ -136,14 +129,13 @@ export default function Portfolio() {
               fully-responsive. I took a mobile-first approach and used modern
               CSS like Flexbox and Grid for layout purposes.
             </p>
-            <Link href="/portfolio/[slug]" as="/portfolio/fylo" className="button">
+            <Link href="/portfolio/fylo" className="button" prefetch={false}>
               View Project
             </Link>
           </div>
         </div>
         <ContactCta />
       </main>
-      <Footer />
     </>
   )
 }

@@ -1,34 +1,26 @@
-import Head from 'next/head'
 import Link from 'next/link'
 
-import Header from '../../components/header'
-import Footer from '../../components/footer'
-import ContactCta from '../../components/contact-cta'
+import ContactCta from '@/components/contact-cta'
 
-import { projects } from '../../data/projects'
+import { projects } from '@/data/projects'
 
-// Pre-render the project detail pages during build
-export const getStaticPaths = async () => {
-  const paths = Object.keys(projects).map((projectSlug) => ({
-    params: { slug: projectSlug },
+export const dynamicParams = false
+
+export async function generateStaticParams() {
+  return Object.keys(projects).map((projectSlug) => ({
+    slug: projectSlug,
   }))
-
-  return { paths, fallback: false }
 }
 
-// Get the data for the project detail pages during build
-export const getStaticProps = async ({ params }) => {
-  const project = projects[params.slug]
-  return { props: { project: project } }
+async function getProject(params) {
+  return projects[params.slug]
 }
 
-const Project = ({ project }) => {
+const Project = async ({ params }) => {
+  const project = await getProject(params)
+
   return (
     <>
-      <Head>
-        <title>Frontend Mentor | Minimalist Portfolio</title>
-      </Head>
-      <Header />
       <main
         id="main-content"
         tabIndex="-1"
@@ -115,31 +107,30 @@ const Project = ({ project }) => {
         </div>
         <div className="portfolio__pagination">
           <Link
-            href="/portfolio/[slug]"
-            as={`/portfolio/${project.previousProject.toLowerCase()}`}
+            href={`/portfolio/${project.previousProject.toLowerCase()}`}
             className="portfolio__pagination--previous"
+            prefetch={false}
           >
-              <p className="portfolio__pagination--title">
-                {project.previousProject}
-              </p>
-              <p className="portfolio__pagination--directional">
-                Previous Project
-              </p>
+            <p className="portfolio__pagination--title">
+              {project.previousProject}
+            </p>
+            <p className="portfolio__pagination--directional">
+              Previous Project
+            </p>
           </Link>
           <Link
-            href="/portfolio/[slug]"
-            as={`/portfolio/${project.nextProject.toLowerCase()}`}
+            href={`/portfolio/${project.nextProject.toLowerCase()}`}
             className="portfolio__pagination--next"
+            prefetch={false}
           >
-              <p className="portfolio__pagination--title">
-                {project.nextProject}
-              </p>
-              <p className="portfolio__pagination--directional">Next Project</p>
+            <p className="portfolio__pagination--title">
+              {project.nextProject}
+            </p>
+            <p className="portfolio__pagination--directional">Next Project</p>
           </Link>
         </div>
         <ContactCta />
       </main>
-      <Footer />
     </>
   )
 }
