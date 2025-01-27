@@ -16,7 +16,8 @@ async function getProject(params) {
   return projects[params.slug]
 }
 
-const Project = async ({ params }) => {
+const Project = async props => {
+  const params = await props.params;
   const project = await getProject(params)
 
   return (
