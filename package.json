@@ -4,7 +4,7 @@
   "private": true,
   "description": "This is a solution to the [Minimalist portfolio website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/minimalist-portfolio-website-LMy-ZRyiE). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -21,18 +21,21 @@
   },
   "homepage": "https://github.com/richardcyrus/fm-minimalist-portfolio-website#readme",
   "dependencies": {
-    "next": "^14.2.23",
-    "react": "18",
-    "react-dom": "18",
+    "next": "15.1.6",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "sass": "^1.62.1"
   },
   "devDependencies": {
     "eslint": "^8.40.0",
-    "eslint-config-next": "^14.2.23",
+    "eslint-config-next": "15.1.6",
     "eslint-config-prettier": "^8.8.0",
     "prettier": "^2.8.8"
   },
   "volta": {
-    "node": "18.20.6"
+    "node": "22.13.1"
+  },
+  "engines": {
+    "node": ">=22.13.1"
   }
 }
